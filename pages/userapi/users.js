@@ -28,7 +28,7 @@ class Users extends React.Component{
                 <h3>Total Users -{this.state.users.length} </h3>
                 {
                     this.state.users.map(user => {
-                        return <li>{user.name} </li>
+                        return <li key={user.id}> <Link href={`${user.id}`}>{user.name}</Link>  </li>
                     })
                 }
 
