@@ -6,7 +6,7 @@ export default function Details(){
     const {name , city , aim } = router.query
     return(
         <div>
-            <h1>My Name is {name}, and i live in {city}. I want to become {aim} . </h1>
+            <h2>My Name is {name}, and i live in {city}. I want to become {aim} . </h2>
         </div>
     )
 }

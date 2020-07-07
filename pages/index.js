@@ -23,7 +23,12 @@ export default function Home() {
           <Link href="/apple">
             Apple
           </Link>
-
+          <br/><br/>
+          <Link href="/userapi/users">
+          Click for Users 
+          </Link>
+          <h3>Use:-  /Name/City/Aim</h3>
+          <h4>In URL you will se the Magic.</h4>
         </div>
       )
 }
