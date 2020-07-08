@@ -18,7 +18,7 @@ export default function List({ownersList}) {
             <h2>Total Users - {ownersList.length}</h2>
             {ownersList.map((e,i) => (
                 <div key={i}>
-                    <Link as={`/user/${e.id}`} href="/[users]/[id]">
+                    <Link as={`/users/${e.id}`} href="/[users]/[id]">
                      <a> A  {e.name} </a>
                     </Link>
                 </div>
