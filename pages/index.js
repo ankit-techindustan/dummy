@@ -24,7 +24,7 @@ export default function Home() {
             Apple
           </Link>
           <br/><br/>
-          <Link href="/[names]/list">
+          <Link href="/[users]/list">
           Click for Users 
           </Link>
           <h3>Use:-  /Name/City/Aim</h3>

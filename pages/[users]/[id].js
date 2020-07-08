@@ -14,7 +14,7 @@ export default function Id({ ownersList }){
         <h4>Website :- {ownersList.website}</h4>
         <h4>Mobile No. :- {ownersList.phone}</h4>
         <br/><br/>
-        <Link href="/[names]/list" >Back to User</Link>
+        <Link href="/[users]/list" >Back to User</Link>
     </div>;
 }
 
