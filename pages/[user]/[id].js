@@ -4,10 +4,9 @@ import Link from 'next/link'
 
 
 export default function Id({ ownersList }){
-    console.log(ownersList,'ownersList2')
-    const router = useRouter();
+    // console.log(ownersList,'ownersList2')
     return <div>
-        <h2>{ownersList.name} Details:-</h2>
+        <h2>{ownersList.name} - {ownersList.id}</h2>
         <h4>UserName :- {ownersList.username}</h4>
         <h4>Email :- {ownersList.email}</h4>
         <h4>Address :- {ownersList.address.street}, {ownersList.address.suite}, {ownersList.address.city}, {ownersList.address.zipcode}.</h4>

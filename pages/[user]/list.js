@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useEffect , useState } from 'react'
 
 export default function List({ownersList}) {
-    console.log(ownersList,'ownersList1')
+    // console.log(ownersList,'ownersList1')
     // const [ owners , setOwners ] = useState([]);
     // useEffect(() => {
     //     async function loadData() {
@@ -17,13 +17,15 @@ export default function List({ownersList}) {
     return(
         <div>
             <h2>Total Users - {ownersList.length}</h2>
-            {ownersList.map((e,i) => (
-                <div key={i}>
-                    <Link as={`/users/${e.id}`} href="/[users]/[id]">
-                     <a> A  {e.name} </a>
-                    </Link>
-                </div>
-            ))}
+            <ol>
+                {ownersList.map((e,i) => (
+                    <div key={i}>
+                        <Link as={`/users/${e.id}`} href="/[users]/[id]">
+                        <a> <li> {e.name}</li> </a> 
+                        </Link>
+                    </div>
+                ))}
+            </ol>
             <br/><br/>
             <Link href="/">Back to Home</Link>
 
@@ -36,5 +38,5 @@ List.getInitialProps = async () => {
     console.log(response,'response')
     const ownersList = await response.json();
     console.log(ownersList,'ownersList')
-    return{ownersList :ownersList }
+    return{ownersList : ownersList }
 }
